@@ -9,12 +9,12 @@ public class CardTester {
      */
     public static void main(String[] args) 
     {
-        Card card1 = new Card("Ace", Suit.SPADES, 11);
-        Card card2 = new Card("Ace", Suit.HEARTS, 11);
-        Card card3 = new Card("Ace", Suit.SPADES, 11);
+        Card card1 = new Card(Rank.ACE, Suit.SPADES);
+        Card card2 = new Card(Rank.ACE, Suit.HEARTS);
+        Card card3 = new Card(Rank.ACE, Suit.SPADES);
         
         System.out.println(card1);
-        System.out.println(card2.suit() + card2.rank() + card2.pointValue());
+        System.out.println(card2.suit().toString() + card2.rank() + card2.pointValue());
         System.out.println(card1.matches(card2));
         System.out.println(card1.matches(card3));
     }
